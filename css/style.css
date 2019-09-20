@@ -1,0 +1,63 @@
+.space-depth-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.msg-component {
+    height: 15px;
+    padding-top: 5px;
+}
+
+.points-list {
+    direction: rtl;
+    height: 200px;
+    padding: 10px 0 10px 0;
+    overflow-y: scroll;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.points-section {
+    padding-top: 15px;
+    height: 200px;
+}
+
+.result {
+    border-left: 3px solid #00dd00;
+    border-top: 1px solid #00dd00;
+    border-right: 1px solid #00dd00;
+    border-bottom: 1px solid #00dd00;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px 0 5px 15px !important;
+}
+
+#pointsList {
+    direction: ltr;
+    padding-left: 30px;
+}
+
+#btn-query {
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

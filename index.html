@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Space</title>
+</head>
+<body>
+
+<div class="container" id="spaceForm" style="width: 800px">
+    <div class="row space-depth-section">
+        <div class="col">
+            <div>
+                <div>
+                    <label>Space depth</label>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm-2">
+                        <input type="text" id="spaceDepth" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row point-form">
+        <div class="col">
+            <div>
+                <div>
+                    <label>Add or remove a point</label>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm-2">
+                        <input type="text" id="xCoordinate" class="form-control" placeholder="x">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="yCoordinate" class="form-control" placeholder="y">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="zCoordinate" class="form-control" placeholder="z">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="pointValue" class="form-control" placeholder="value">
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="form-control btn btn-primary" onclick="savePoint()">Add/Update</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="form-control btn btn-danger" onclick="removePoint()">Remove</button>
+                    </div>
+                </div>
+                <div class="msg-component">
+                    <span id="msg" class="badge badge-warning" style="display: none">Warning</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row points-section">
+        <div class="col">
+            <div>
+                <label>Saved points</label>
+            </div>
+            <div class="points-list">
+                    <ul id="pointsList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 80px">
+        <div class="col">
+            <div>
+                <div><label>Point A</label></div>
+                <div class="form-row">
+                    <div class="col-sm-2">
+                        <input type="text" id="pointAxCoordinate" class="form-control" placeholder="x">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="pointAyCoordinate" class="form-control" placeholder="y">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="pointAzCoordinate" class="form-control" placeholder="z">
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4 result">
+                        <strong>Result</strong>: <span id="result">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px">
+        <div class="col">
+            <div>
+                <div><label>Point B</label></div>
+                <div class="form-row">
+                    <div class="col-sm-2">
+                        <input type="text" id="pointBxCoordinate" class="form-control" placeholder="x">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="pointByCoordinate" class="form-control" placeholder="y">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" id="pointBzCoordinate" class="form-control" placeholder="z">
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                        <input type="button" id="btn-query" onclick="query()" class="btn btn-primary" value="Sum points in space">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/models.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
